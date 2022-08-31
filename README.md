@@ -1,12 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Sistemas para Internet`
 
-`DISCIPLINA`
+`Projeto Desenvolvimento Back-End`
 
-`SEMESTRE`
+`3° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo do projeto UTI Processual é desenvolver um sistema web baseado
+em requisitos fornecidos pela 2ª Vara Criminal da Comarca de Poços de Caldas.
+O sistema web em desenvolvimento deverá permitir o controle de processos
+judiciais, com alertas coloridos e prazos de respostas das partes envolvidas,
+fornecendo informações sobre:
+
+- Identificação dos tipos de processos judiciais e suas categorias;
+- Verificação da quantidade de processos abertos que carecem atenção;
+- Análise de casos que demandam prioridade (réu preso).
+
+Esse projeto está sendo desenvolvido por alunos do Curso Superior de
+Tecnologia em Sistemas para Internet ofertado na modalidade de EaD da PUC
+Minas, orientado pelos professores de cada eixo semestral cursado pelos
+alunos.
 
 ## Integrantes
 
@@ -17,7 +30,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
