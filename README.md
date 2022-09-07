@@ -1,10 +1,11 @@
-# TÍTULO DO PROJETO
+# UTI Processual
 
-`Sistemas para Internet`
+`CURSO` Sistemas para Internet
 
-`Projeto Desenvolvimento Back-End`
+`DISCIPLINA` Desenvolvimento Web Back-End
 
-`3° Semestre`
+`SEMESTRE` 3º Semestre
+
 
 O objetivo do projeto UTI Processual é desenvolver um sistema web baseado
 em requisitos fornecidos pela 2ª Vara Criminal da Comarca de Poços de Caldas.
@@ -23,18 +24,20 @@ alunos.
 
 ## Integrantes
 
-* João Pedro Gomes Ferreira
-* Marsselle Viviane Lins Figueiredo Dutra
-* Jessé Silva de Paula
 * Danilo Santos Silva
+* João Pedro Gomes Ferreira
+* Jessé Silva de Paula
+* Marsselle Dutra
 
 ## Orientador
 
 * Will Ricardo dos Santos Machado
 
+
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+
 
 # Documentação
 
@@ -54,10 +57,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
 
-# Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+# Código
+* [**Código Fonte**](https://github.com/olhodetigre/uti-processual/tree/release)
 
 # Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+* [**Apresentação da Solução**](presentation/README.md)
