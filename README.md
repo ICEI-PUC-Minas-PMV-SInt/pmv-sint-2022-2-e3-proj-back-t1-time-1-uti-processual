@@ -27,7 +27,7 @@ alunos.
 * Danilo Santos Silva
 * João Pedro Gomes Ferreira
 * Jessé Silva de Paula
-* Marsselle Dutra
+* Marsselle Viviane Lins Figueiredo Dutra
 
 ## Orientador
 
