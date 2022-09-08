@@ -11,7 +11,8 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 Para visualizar o flow da aplicação utilizar através do link: <br>
 [Protótipo Figma](https://www.figma.com/proto/rL49KsTmaC2QDO8hJUOWDp/UTI-Processual?page-id=0%3A1&node-id=21%3A382&viewport=242%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=21%3A382)
 
-<img src="img/wireframes/Flow.png" alt="Tela de login" width="600">
+![image](https://user-images.githubusercontent.com/90061974/189214889-44453c28-f999-4ca7-aa9e-4ef7194225da.png)
+
 
 <!-- ![Exemplo de UserFlow](img/userflow.jpg)
 
@@ -36,49 +37,45 @@ Projeto inicial de wireframe de baixa resolução para projeção visual de como
     </tr>
     <tr>
         <td>Tela de login</td>
-        <td><img src="img/wireframes/Login.png" alt="Tela de login" width="600"></td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189215004-430c0f6a-949c-46e1-a94f-8361d0a5883a.png
+            alt="Tela de login" width="600"></td>
         <td>RF-06 e RF-07</td>
         <td>Tela de login com possibilidade de acessar o <br> perfil ou realizar cadastro caso não tenha conta.</td>
     </tr>
     <tr>
-        <td>Tela de cadastro</td>
-        <td><img src="img/wireframes/SignUp.png" alt="Tela de cadastro" width="600"></td>
-        <td>RF-01, RF-02, RF-03 e RF-19</td>
-        <td>Tela de cadastro com os campos necessários.<br> Para usuário réu ou familiar não será mostrado o campo CNA.</td>
+        <td>Tela de acesso público</td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189215805-e7628d47-8cfa-47b7-9695-edbce745d3d3.png alt="Tela de acesso público" width="600">       </td>
+        <td>RF-02, RF-03 e RF-19</td>
+        <td>Tela padrão de primeiro acesso</td>
     </tr>
     <tr>
-        <td>Tela de perfil</td>
-        <td><img src="img/wireframes/TelaPerfil.png" alt="Tela de perfil" width="600"></td>
+        <td>Tela de cadastro</td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189215603-2400ee75-5dd3-4cd8-bf0d-574dea06566f.png alt="Tela de cadastro" width="600"></td>
+        <td>RF-02, RF-03 e RF-19</td>
+        <td>Tela de cadastro com os campos necessários.</td>
+    </tr>
+    <tr>
+        <td>Tela de inclusão de novo processo</td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189216173-d5ffefae-08e9-429c-8702-4f7fa9cc3ed5.png
+ alt="Tela de inclusão de novo processo" width="600"></td>
         <td>RF-04 e RF-19</td>
-        <td>Tela de cadastro com os campos necessários.<br> Para usuário réu ou familiar não será mostrado o campo CNA.</td>
+        <td>Tela de cadastro de novos processos com os campos necessários.<br> </td>
     </tr>
     <tr>
         <td>Tela do dashboard</td>
-        <td><img src="img/wireframes/Dashboard.png" alt="Dashboard" width="600"></td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189216722-cabefef0-db8f-48a4-97b5-ba16a0572a95.png alt="Dashboard" width="600"></td>
         <td>RF-13 e RF-19</td>
-        <td>Tela principal/inicial do sistema após o login.</td>
-    </tr>
-    <tr>
-        <td>Tela de pesquisa</td>
-        <td><img src="img/wireframes/Processos.png" alt="Tela de resultado da pesquisa" width="600"></td>
-        <td>RF-11 e RF-19</td>
-        <td>Tela após o resultado da pesquisa mostrando processos e/ou usuários de acordo com os dados pesquisados.</td>
-    </tr>
-    <tr>
-        <td>Modal de inclusão de processo</td>
-        <td><img src="img/wireframes/InclusaoProcessos.png" alt="Modal de inclusão de processo" width="600"></td>
-        <td>RF-08, RF-09, RF-13, RF-14, RF-15 e RF-19</td>
-        <td>Tela de modal para inclusão de novo processo com os dados iniciais a serem preenchidos. Após a criação, é direcionado à tela de detalhes do processo.</td>
+        <td>Tela principal do sistema.<br> Aqui o usuário poderá procurar e filtrar processos</td>
     </tr>
     <tr>
         <td>Tela de detalhamento processual</td>
-        <td><img src="img/wireframes/TimelineProcesso.png" alt="Tela de detalhamento processual" width="600"></td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189217152-74fc8c92-d71e-4459-b4b6-69a447cd01a8.png alt="Tela de detalhamento processual" width="600"></td>
         <td>RF-10, RF-12, RF-16, RF-18 e RF-19</td>
         <td>Tela após o resultado da pesquisa mostrando processos e/ou usuários de acordo com os dados pesquisados.</td>
     </tr>
     <tr>
         <td>Modal de edição de processo</td>
-        <td><img src="img/wireframes/EdicaoTimeline.png" alt="Modal de edição de processo" width="600"></td>
+        <td><img src=https://user-images.githubusercontent.com/90061974/189217039-2ed15854-8813-4282-91d9-6f4577275f00.png alt="Modal de edição de processo" width="600"></td>
         <td>RF-08, RF-09, RF-15 e RF-19</td>
         <td>Tela de modal para edição e/ou inclusão de novo acompanhamento no detalhamento do processo.</td>
     </tr>
