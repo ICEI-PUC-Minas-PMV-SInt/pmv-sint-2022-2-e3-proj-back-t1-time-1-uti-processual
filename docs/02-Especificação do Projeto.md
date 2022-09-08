@@ -1,102 +1,140 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Haja vista, que atualmente o usuário interessado em acompanhar processos jurídicos se depara com a falta de informações realcionadas à estes. Dessa forma, o projeto busca desenvolver uma aplicação web que contenha dados quanto aos procedimentos dos processos e o progresso desses
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Assim, neste documento serão abordadas as definições de persona, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto utilizando técnicas de obtenção de dados, como questionários online, para compreender de forma específica nosso usuário e suas necessidades.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1 - Advogado - Aquele que acompanha o caso. Precisa de informações e acessos as atualizações do processo.
+Exemplo: João Carlos é advogado e está acompanhando o processo de Luiz Mendes, que está sendo acusado de não pagar a pensão alimentícia dos filhos. Luiz Mendes não possui computador em casa, por isso João Carlos que acessa todas as informações e, posteriormente, entra em contato com Luiz pelo telefone e passa as atualizações.
+Para tanto, o advogado irá precisar acessar essas informações. Provavelmente por meio de um código de acesso que apenas o advogado tem acesso.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2 – Réu – Aquele que é o mais interessado no andamento do processo. É a figura principal. Precisa ter o acesso para saber o andamento do seu processo.
+Exemplo: Luiz Mendes está sendo processado pela ex-esposa por não pagar pensão alimentícia para os filhos. Com isso, possui um código de acesso para acompanhar o andamento do seu processo, inclusive para saber quando e se precisará ir até o Fórum ou entregar alguma documentação complementar.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3 – Assessor/Juiz – Aqueles que precisam ter acesso integral ao processo para saber o andamento para fins judiciais, para a tomada de decisões bem como o histórico de todo o processo.
+Exemplo: Tadeu Farias é assessor do juiz Júlio. Com isso, precisa ter acesso a todo o histórico e atualizações do processo para deixa o juiz informado. Bem como analisar eventuais contratempos e saber exatamente em que momento deverá ter a interferência do juiz.
+
+4 – Familiar/ Terceiro – Aqueles que não possuem vínculo no processo, mas que de alguma forma precisam ter informações. Ocorre no caso que o réu esteja incapacitado de acompanhar o processo, e com isso, passar as informações para o réu.
+Exemplo: Maria é irmã de Luiz Mendes, que é réu do processo. Como Luiz Mendes se encontra aprisionado, Maria que acompanha todas as atualizações do processo.
+
+5 –Desenvolvedores – São aqueles que conseguem fazer melhorias nos sistemas para que ocorra a evolução e manutenção do mesmo.
+Exemplo: José é desenvolvedor de sistemas e presta suporte para o sistema UTI PROCESSUAL. Com isso, precisa ter acesso as funcionalidades para realizar as atividades.
+
+6 – Digitador ou similar – Aquele que incluir, altera e modifita os processos conforma as atualizações.Exemplo: Mariana é a pessoa responsável por incluir os processos e manter os mesmos atualizados.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+Advogados
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+• Como advogado, precisa registrar todos os resultados de audiências e atualizações dos casos para enviar ao fórum/comarca.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+• Como Advogado, desejo salvar o documento em um arquivo para que os clientes possam abri-lo e consultar as atualizações.
+
+• Como Advogado, desejo exibir na tela principal um relatório para que possa revisar todas as informações e requisitos do processo em uma única exibição.
+
+• Como Advogado, quero encontrar palavras - chave para que possa identificar e manipular os processos que contêm as palavras-chave pesquisadas.
+
+• Como Advogado, desejo imprimir uma visualização do documento para que eu possa revisar os processos sem a necessidade de executar a ferramenta.
+
+Réu
+
+• Como réu, preciso consultar as atualizações do meu processo, para saber qual foi a decisão tomada pelo juiz.
+
+Juiz/Assessor
+
+• Como Juiz, preciso receber as atualizações dos processos e informações dos advogados e delegados, para tomar a decisão correta e no tempo certo.
+
+• Como assessor, desejo salvar o documento em um arquivo para criar pastas por processo.
+
+• Como assessor, desejo anexar imagens e outros documentos aos processos para que eu possa ter maior controle das pendências.
+
+• Como juiz, quero ordenar os processos por um atributo personalizado escolhido para que eu possa exibir o processo classificando por prioridade, crime, tipo de sentença, prazo de resposta, etc.
+
+• Como assessor, desejo imprimir uma visualização do documento para que eu possa revisar os requisitos sem a necessidade de executar a ferramenta.
+
+• Como juiz/assessor, desejo gerar um relatório de rastreabilidade para que eu possa analisar os prazos e o impacto dos processos sem resposta.
+
+Familiar/ Terceiro
+
+• Como familiar/terceiro, preciso consultar as atualizações do processo, para saber qual foi a decisão tomada pelo juiz e informar ao parente(réu)
+
+Desenvolvedores
+
+• Como desenvolvedor preciso manter o sistema em ordem e atualizado, para evitar perdas de informações e prazos de respostas por parte dos envolvido
+
+Digitador ou similar
+
+• Como digitador preciso registrar as informações no sistema para enviar as atualizações dos processos para as pessoas responsáveis.
+
+• Digitador , desejo salvar automaticamente minhas alterações para não perdê-las se a ferramenta for encerrada inesperadamente antes de fechar um arquivo.
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| USUÁRIOS/CADASTRO |                                                                                                                                                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID                | Descrição do Requisito                                                                                                                                                                                           |
+| RF-01             | O sistema permitirá que usuários pesquisem e acessem informações sobre os processos. |
+| RF-02             | Os usuários cadastrado na caterogia de admin deverão informar: nome, login, senha, data de nascimento, endereço, e-mail, CEP, bairro, cidade, estado e CNA (Cadastro Nacional de Advogados). |
+| RF-04             | O sistema permitirá que os administradores façam alterações em seus dados cadastrais.                                                                                                                                   |
+
+| LOGIN |                                                                                                                                                                                            |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ID    | Descrição do Requisito                                                                                                                                                                     |
+| RF-05 | O sistema permitirá o acesso dos usuários através do login e senha.                                                                                                                        |
+| RF-06 | Autenticação de usuários cadastrados no sistema, sendo esses: Advogados, Juizes/Acessores, Digitadores e Réus permitindo o acesso e realização de operações em diferente áreas do sistema. |
+
+| OPERAÇÕES DO USUÁRIO/ADVOGADO |                                                                                                                                                              |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ID                            | Descrição do Requisito                                                                                                                                       |
+| RF-07                         | O usuário advogado, poderá registrar e gerenciar os documentos do sistema, fazendo alterações, atualizações de múltiplos processos.                          |
+| RF-08                         | O usuário advogado, poderá registrar resultados e atualizações das audiências, podendo também compartilhar essas informações com o Forum/Comarca via sistema |
+| RF-09                         | O usuário advogado, terá em uma tela, onde pode facilmente encontrar os dados e requisitos dos processos, em uma única exibição.                             |
+| RF-10                         | O usuário advogado, poderá filtrar os diferentes processos por tipos, sendo os tipos palavras chaves para cada categoria de processo.                        |
+| RF-11                         | O usuário advogado, poderá solicitar uma impressão dos arquivos cadastrados no sistema.                                                                      |
+
+| OPERAÇÕES DO USUÁRIO/JUIZ/ACESSOR |                                                                                                                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| RF-12                             | O usuário Juiz/Acessor, terá acesso a um dashboard contendo atualizações dos processos e informações dos advogados e delegados. Para a tomada de decisões com base em prioridades e data limite. |
+| RF-13                             | O usuário Juiz/Acessor, salvará e criará as pastas dos processos                                                                                                                                 |
+| RF-14                             | O usuário Juiz/Acessor, irá anexar imagens e outros documentos aos processos, para assim ter maios controle das pendências                                                                       |
+| RF-15                             | O usuário Juiz/Acessor, poderá atribuir aos processos classificações de acordo com prioridade, crime, tipo de sentença, prazo de resposta, etc...                                                |
+| RF-16                             | O usuário Juiz/Acessor, poderá solicitar uma impressão dos arquivos cadastrados no sistema.                                                                                                      |
+| RF-17                             | O usuário Juiz/Acessor, irá gerar relatórios automáticos que informem prazos e os impactos dos processos sem respota.                                                                            |
+
+| OPERAÇÕES DO USUÁRIO/RÉU/FAMILIA E TERCEIROS |                                                                                                                  |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| RF-18                                        | O usuário Réu, Poderá visualizar as informações e possíveis atualizações dos processos atrelados a este usuário. |
+
+| OPERAÇÕES DO USUÁRIO/DESENVOLVEDOR |                                                                                                                        |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| RF-19                              | O usuário Desenvolvedor, Terá acesso à todas às operações já mencionada, com a finalidade de manter o sistema em ordem |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| OPERAÇÕES DO USUÁRIO/RÉU/FAMILIAR E TERCEIROS |                                                                      |
+| --------------------------------------------- | -------------------------------------------------------------------- |
+| RNF-01                                        | A interface deve ser agradável e de fácil utilização                 |
+| RNF-02                                        | As alterações feitas no sistema deverão serem salvas automaticamente |
+| RNF-03                                        | O aplicativo deve consumir poucos recursos do navegador              |
+| RNF-04                                        | O sistema deve ser responsivo para uso em smartphones                |
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+01: Este sistema deverá ser acessado apenas por pessoas maiores de 18 anos.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+02: No sistema conterá uma página com acesso permitido apenas para juízes e advogados do Fórum.
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+03: O sistema voltará ao início após um tempo de inatividade.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+04: Este sistema só poderá ser alterado por pessoas autorizadas.
 
-## Diagrama de Casos de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+05: A pagina inicial do sistema (Login) só aceitará o número do CPF sem pontos.
