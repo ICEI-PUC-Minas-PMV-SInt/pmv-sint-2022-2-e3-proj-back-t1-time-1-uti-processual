@@ -6,12 +6,10 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 <!-- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>. -->
 
-## User Flow
+## Diagrama de Fluxo Web
 
 Para visualizar o flow da aplicação utilizar através do link: <br>
-[Protótipo Figma](https://www.figma.com/proto/rL49KsTmaC2QDO8hJUOWDp/UTI-Processual?page-id=0%3A1&node-id=21%3A382&viewport=242%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=21%3A382)
-
-![image](https://user-images.githubusercontent.com/90061974/189214889-44453c28-f999-4ca7-aa9e-4ef7194225da.png)
+https://lucid.app/lucidchart/4b60e3fd-af8d-4cc1-a6e3-14a3fee1a4fd/edit?viewport_loc=-148%2C-17%2C2164%2C1068%2CboKdRBqdlWdr&invitationId=inv_2c283d76-634d-47f8-af95-6a267fa5a0fb#
 
 
 <!-- ![Exemplo de UserFlow](img/userflow.jpg)
