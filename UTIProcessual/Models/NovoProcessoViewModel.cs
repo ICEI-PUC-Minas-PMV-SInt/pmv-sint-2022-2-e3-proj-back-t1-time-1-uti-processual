@@ -1,9 +1,7 @@
-﻿namespace UTIProcessual.Models.Cadastro
+﻿namespace UTIProcessual.Models
 {
-    public class NovoProcesso
+    public class NovoProcessoViewModel
     {
-        // Processo
-        public Guid Id { get; set; }
         public int NumeroProcessoPenal { get; set; }
         public string TipoPenal { get; set; }
 

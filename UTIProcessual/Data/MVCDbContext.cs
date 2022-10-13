@@ -10,6 +10,6 @@ namespace UTIProcessual.Data
 
         }
 
-        public DbSet<NovoProcesso> Processos { get; set; }
+        public DbSet<NovoProcesso> CadastroProcessos { get; set; }
     }
 }
