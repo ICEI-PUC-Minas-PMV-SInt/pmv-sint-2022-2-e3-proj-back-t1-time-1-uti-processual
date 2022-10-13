@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using UTIProcessual.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// DB Connection
+string connectionString = builder.Configuration.GetConnectionString("DBConnection");
+ServerVersion sv = MariaDbServerVersion.AutoDetect(connectionString);
+
+builder.Services.AddDbContext<MVCDbContext>(options =>
+    options.UseMySql(connectionString, sv));
 
 var app = builder.Build();
 

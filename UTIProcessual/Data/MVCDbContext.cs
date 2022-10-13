@@ -3,16 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace UTIProcessual.Data
 {
-    internal sealed class MVCDbContext : DbContext
+    public class MVCDbContext : DbContext
     {
-        public DbSet<NovoProcesso> CadastroProcessos { get; set; }
-
-        private const string connectionString = "server=localhost;port=3306;database=utiprocessual;user=root;password=fakemonalisa";
-        ServerVersion sv = MariaDbServerVersion.AutoDetect(connectionString);
-
-        protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        public MVCDbContext(DbContextOptions options) : base(options)
         {
-            dbContextOptionsBuilder.UseMySql(connectionString, sv);
+
         }
+
+        public DbSet<NovoProcesso> Processos { get; set; }
     }
 }
