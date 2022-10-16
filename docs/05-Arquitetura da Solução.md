@@ -36,7 +36,9 @@ Entregar um arquivo dml.sql contendo os scripts de manipulação de banco de dad
 As ferramentas e tecnologias que serão utilizadas para o desenvolvimento de software são: 
  - Prototipagem: Figma
 
- - Linguagens: C#, ASP.NET 6, JavaScript
+ - Linguagens: C#, JavaScript
+ - Linguagens de cascata e marcação: HTML 5, CSS3
+ - Frameworks Web: ASP.NET 6
  
  - Modelagem de Dados: MariaDB e Lucidchart
  - Testes e conexões com o banco de dados: DBeaver
