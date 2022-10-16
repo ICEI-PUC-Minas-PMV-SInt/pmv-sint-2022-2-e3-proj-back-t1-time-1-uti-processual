@@ -21,11 +21,7 @@ https://lucid.app/lucidchart/141090b0-0a40-4533-8cc3-783eaead50d1/edit?viewport_
 
 ## Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+https://lucid.app/lucidchart/0a0b1cb3-a57a-410e-a39f-7d598699e83d/edit?invitationId=inv_69a29cff-69d3-4461-a197-b11389ee0b27&page=0_0#
 
 ## Modelo Físico (DDL)
 
