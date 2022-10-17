@@ -45,7 +45,7 @@ As ferramentas e tecnologias que serão utilizadas para o desenvolvimento de sof
  - Desenvolvimento Front-End: Visual Studio Code
  - Desenvolvimento Back-End: Visual Studio / Rider
  
- - Hoespedagem: Azure
+ - Hospedagem: Azure
  - Versionamento de Código: Git e GitHub
  - Planejamento: Medologia Scrum, quadro Kanban. 
  - Comunicação da equipe: WhatsApp, Discord, Microsoft Teams
