@@ -25,11 +25,10 @@ https://lucid.app/lucidchart/0a0b1cb3-a57a-410e-a39f-7d598699e83d/edit?invitatio
 
 ## Modelo Físico (DDL)
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+[Visualizar arquivo](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/dev/mvc/UTIProcessual/Migrations/20221012160114_Initial%20Migration.cs)
 
 ## Instruções SQL de Manipulação do BD (DML)
-
-Entregar um arquivo dml.sql contendo os scripts de manipulação de banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+[Visualizar arquivo](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/dev/mvc/UTIProcessual/Migrations/20221012160114_Initial%20Migration.Designer.cs)
 
 ## Tecnologias Utilizadas
 
