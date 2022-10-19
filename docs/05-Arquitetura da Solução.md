@@ -24,10 +24,10 @@ https://lucid.app/lucidchart/141090b0-0a40-4533-8cc3-783eaead50d1/edit?viewport_
 https://lucid.app/lucidchart/0a0b1cb3-a57a-410e-a39f-7d598699e83d/edit?invitationId=inv_69a29cff-69d3-4461-a197-b11389ee0b27&page=0_0#
 
 ## Modelo Físico (DDL)
-[Visualizar pasta](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/dev/mvc/UTIProcessual/Migrations/20221012160114_Initial%20Migration.cs](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/dev/mvc/UTIProcessual/Migrations/20221012160114_Initial%20Migration.cs](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/tree/archives/db/DDL)
+[Visualizar pasta](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/tree/archives/db/DDL)
 
 ## Instruções SQL de Manipulação do BD (DML)
-[Visualizar pasta](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/dev/mvc/UTIProcessual/Migrations/20221012160114_Initial%20Migration.Designer.cs](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/tree/archives/db/DML)
+[Visualizar pasta](https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/tree/archives/db/DML)
 
 ## Tecnologias Utilizadas
 
