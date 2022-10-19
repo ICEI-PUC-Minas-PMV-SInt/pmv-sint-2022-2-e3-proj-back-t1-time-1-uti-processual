@@ -20,6 +20,7 @@ CREATE TABLE `cadastroprocessos` (
   `Advogado` longtext NOT NULL,
   `OABAdvogado` longtext NOT NULL,
   `DefensoriaPublica` longtext NOT NULL,
+  `Status` int(1),
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
