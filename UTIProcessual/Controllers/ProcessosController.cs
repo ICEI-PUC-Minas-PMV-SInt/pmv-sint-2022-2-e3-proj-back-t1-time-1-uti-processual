@@ -57,7 +57,7 @@ namespace UTIProcessual.Controllers
 
             await dbContext.CadastroProcessos.AddAsync(processos);
             await dbContext.SaveChangesAsync();
-            return RedirectToAction("Adicionar");
+            return RedirectToAction("ListarProcessos");
         }
     }
 }
