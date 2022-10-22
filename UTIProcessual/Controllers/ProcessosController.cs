@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.X509Certificates;
 using UTIProcessual.Data;
 using UTIProcessual.Models;
@@ -13,6 +14,14 @@ namespace UTIProcessual.Controllers
         {
             this.dbContext = dbContext;
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ListarProcessos()
+        {
+            var listarProcessos = await dbContext.CadastroProcessos.ToListAsync();
+            return View(listarProcessos);
+        }
+
 
         [HttpGet]
         public IActionResult Adicionar()

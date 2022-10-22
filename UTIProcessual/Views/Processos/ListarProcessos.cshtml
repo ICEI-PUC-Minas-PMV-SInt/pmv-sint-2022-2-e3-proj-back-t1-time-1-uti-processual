@@ -1,0 +1,23 @@
+﻿@model List<UTIProcessual.Models.Cadastro.NovoProcesso>
+
+@{
+
+}
+
+<h1>Processos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nº Processo penal</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var infoProcesso in Model){
+            <tr>
+                <td>@infoProcesso.NumeroProcessoPenal</td>
+            </tr>
+        }
+    </tbody>
+</table>
