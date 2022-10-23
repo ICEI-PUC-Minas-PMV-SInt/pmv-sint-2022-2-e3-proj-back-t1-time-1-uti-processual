@@ -132,5 +132,21 @@ namespace UTIProcessual.Controllers
             return RedirectToAction("ListarProcessos");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete(EditarProcessoViewModel model)
+        {
+            var excluirProcesso = await dbContext.CadastroProcessos.FindAsync(model.Id);
+
+            if (excluirProcesso != null)
+            {
+                dbContext.CadastroProcessos.Remove(excluirProcesso);
+                await dbContext.SaveChangesAsync();
+
+                return RedirectToAction("ListarProcessos");
+            }
+
+            return RedirectToAction("ListarProcessos");
+        }
+
     }
 }
