@@ -12,8 +12,8 @@ using utip_backend.Areas.Identity.Data;
 namespace utip_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221105220854_InitApplicationUser")]
-    partial class InitApplicationUser
+    [Migration("20221112165946_InitMigration")]
+    partial class InitMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
