@@ -1,0 +1,126 @@
+﻿@model IEnumerable<utip_backend.Models.ProcessModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lei 11.343/06</h1>
+
+<p>
+    <a target="_blank" asp-action="Create">Create New</a>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.NumLegalProcess)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Defendant)
+            </th>
+@*            <th>
+                @Html.DisplayNameFor(model => model.NaturalidadeReu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FiliacaoReu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascReu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefoneReu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DefensoriaPublica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Attorney)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPenal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DefAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroREDS)
+            </th>*@
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.DataDoCrime)
+            </th>
+@*            <th>
+                @Html.DisplayNameFor(model => model.LocalDoCrime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumInqueritoPolicial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdStatus)
+            </th>*@
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.TxStatus)
+            </th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td >
+                @Html.DisplayFor(modelItem => item.NumLegalProcess)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Defendant)
+            </td>
+@*            <td>
+                @Html.DisplayFor(modelItem => item.NaturalidadeReu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FiliacaoReu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascReu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefoneReu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DefensoriaPublica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Attorney)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPenal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DefAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroREDS)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDoCrime)
+            </td>
+@*           <td>
+                @Html.DisplayFor(modelItem => item.LocalDoCrime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumInqueritoPolicial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdStatus)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.TxStatus)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProcessID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProcessID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

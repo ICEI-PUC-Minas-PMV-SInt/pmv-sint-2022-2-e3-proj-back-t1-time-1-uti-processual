@@ -1,0 +1,109 @@
+﻿@model utip_backend.Models.ProcessModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ProcessModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumLegalProcess" class="control-label"></label>
+                <input asp-for="NumLegalProcess" class="form-control" />
+                <span asp-validation-for="NumLegalProcess" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Defendant" class="control-label"></label>
+                <input asp-for="Defendant" class="form-control" />
+                <span asp-validation-for="Defendant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NaturalidadeReu" class="control-label"></label>
+                <input asp-for="NaturalidadeReu" class="form-control" />
+                <span asp-validation-for="NaturalidadeReu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiliacaoReu" class="control-label"></label>
+                <input asp-for="FiliacaoReu" class="form-control" />
+                <span asp-validation-for="FiliacaoReu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataNascReu" class="control-label"></label>
+                <input asp-for="DataNascReu" class="form-control" />
+                <span asp-validation-for="DataNascReu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelefoneReu" class="control-label"></label>
+                <input asp-for="TelefoneReu" class="form-control" />
+                <span asp-validation-for="TelefoneReu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefensoriaPublica" class="control-label"></label>
+                <input asp-for="DefensoriaPublica" class="form-control" />
+                <span asp-validation-for="DefensoriaPublica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Attorney" class="control-label"></label>
+                <input asp-for="Attorney" class="form-control" />
+                <span asp-validation-for="Attorney" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoPenal" class="control-label"></label>
+                <input asp-for="TipoPenal" class="form-control" />
+                <span asp-validation-for="TipoPenal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefAddress" class="control-label"></label>
+                <input asp-for="DefAddress" class="form-control" />
+                <span asp-validation-for="DefAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroREDS" class="control-label"></label>
+                <input asp-for="NumeroREDS" class="form-control" />
+                <span asp-validation-for="NumeroREDS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataDoCrime" class="control-label"></label>
+                <input asp-for="DataDoCrime" class="form-control" />
+                <span asp-validation-for="DataDoCrime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocalDoCrime" class="control-label"></label>
+                <input asp-for="LocalDoCrime" class="form-control" />
+                <span asp-validation-for="LocalDoCrime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumInqueritoPolicial" class="control-label"></label>
+                <input asp-for="NumInqueritoPolicial" class="form-control" />
+                <span asp-validation-for="NumInqueritoPolicial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdStatus" class="control-label"></label>
+                <input asp-for="IdStatus" class="form-control" />
+                <span asp-validation-for="IdStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxStatus" class="control-label"></label>
+                <input asp-for="TxStatus" class="form-control" />
+                <span asp-validation-for="TxStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
