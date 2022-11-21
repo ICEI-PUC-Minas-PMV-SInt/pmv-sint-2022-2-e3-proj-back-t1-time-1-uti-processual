@@ -1,4 +1,5 @@
-﻿@{
+﻿@model utip_backend.Models.ProcessModel
+@{
     ViewData["Title"] = "Dashboard";
 }
 
@@ -16,17 +17,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1219021987389173891</td>
-                    <td>denuncia</td>
-                    <td>verde</td>
-                    <td>
-                        <div>
-                            <span>editar</span>
-                            <span>excluir</span>
-                        </div>
-                    </td>
-                </tr>
+                @foreach(var item in ) //Definir propriedade GetEnumerate//
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.NumLegalProcess)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TipoPenal)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IdStatus)</td>
+                        <td>
+                            <div>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </div>
+                        </td>
+                    </tr>
+                }
+                
             </tbody>
         </table>
     </div>
