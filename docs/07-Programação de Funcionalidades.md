@@ -6,6 +6,11 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
+
+# Processos (Criação, Leitura, Atualização e Exclusão)
+
+https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2022-2-e3-proj-back-t1-time-1-uti-processual/main/presentation/etapa3/CRUD%20-%20Processos.mp4
+
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
