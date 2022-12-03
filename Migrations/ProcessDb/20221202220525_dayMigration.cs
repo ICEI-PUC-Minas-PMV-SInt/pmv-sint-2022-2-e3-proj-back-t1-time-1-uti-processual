@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace utip_backend.Migrations
+namespace utip_backend.Migrations.ProcessDb
 {
-    public partial class InitialCreateProcess : Migration
+    public partial class dayMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,7 +30,9 @@ namespace utip_backend.Migrations
                     LocalDoCrime = table.Column<string>(type: "nvarchar(255)", nullable: true),
                     NumInqueritoPolicial = table.Column<string>(type: "nvarchar(11)", nullable: true),
                     IdStatus = table.Column<int>(type: "int", nullable: true),
-                    TxStatus = table.Column<string>(type: "nvarchar(4)", nullable: true)
+                    TxStatus = table.Column<string>(type: "nvarchar(4)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime", nullable: true),
+                    days = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {

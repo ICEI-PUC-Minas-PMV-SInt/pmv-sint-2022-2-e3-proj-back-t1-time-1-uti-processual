@@ -15,7 +15,13 @@
         <tr>
             <th scope="col">#</th>
             <th scope="col">
-                @Html.DisplayNameFor(model => model.NumLegalProcess)
+                Número do Processo
+            </th>
+            <th>
+                Dias corridos
+            </th>
+            <th scope="col">
+                Status
             </th>
             <th scope="col">
                 @Html.DisplayNameFor(model => model.Defendant)
@@ -48,7 +54,7 @@
                 @Html.DisplayNameFor(model => model.NumeroREDS)
             </th>*@
             <th scope="col">
-                @Html.DisplayNameFor(model => model.DataDoCrime)
+                Data do Crime
             </th>
 @*            <th>
                 @Html.DisplayNameFor(model => model.LocalDoCrime)
@@ -59,9 +65,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.IdStatus)
             </th>*@
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.TxStatus)
-            </th>
             <th>Ações</th>
         </tr>
     </thead>
@@ -69,15 +72,179 @@
 @foreach (var item in Model) {
         <tr>
                 <td>
-                    <span style="height: 25px;
-                        width: 25px;
-                        background-color: red;
-                        border-radius: 50%;
-                        display: inline-block;
-                    "></span>
+                    @{
+                        switch (item.IdStatus) 
+                        {
+                            case 0: 
+                                if (item.days <= 30)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: green;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days <= 45)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: yellow;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days > 45)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: red;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                    </span>
+                                }
+                                break;
+
+                            case 1:
+                                if (item.days <= 10)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: green;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days <= 15)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: yellow;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                </span>
+                                }
+                                else if (item.days > 15)
+                                {
+                                    <span style="height: 25px;
+                                        width: 25px;
+                                        background-color: red;
+                                        border-radius: 50%;
+                                        display: inline-block;">
+                                    </span>
+                                }
+                                break;
+                                
+                            case 2:
+                                if (item.days <= 5)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: green;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days <= 8)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: yellow;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days > 8)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: red;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                break;
+
+                            case 3:
+
+                                if (item.days <= 25)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: green;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days <= 30)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: yellow;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                else if (item.days > 30)
+                                {
+                                    <span style="height: 25px;
+                                            width: 25px;
+                                            background-color: red;
+                                            border-radius: 50%;
+                                            display: inline-block;">
+                                    </span>
+                                }
+                                break;
+
+                            case 4:
+                                <span 
+                                    style="height: 25px;
+                                    width: 25px;
+                                    background-color: black;
+                                    border-radius: 50%;
+                                    display: inline-block;">
+                                </span>
+                                break;
+
+                        }
+                    }
                 </td>
             <td >
                 @Html.DisplayFor(modelItem => item.NumLegalProcess)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.days)
+            </th>
+            <td>
+                @{
+                    switch (item.TxStatus)
+                    {
+                        case "FLAG":
+                            <span>Flagrante/Inquérito</span>
+
+                            break;
+
+                        case "DENU":
+                            <span>Denúncia</span>
+
+                            break;
+
+                        case "DEFP":
+                            <span>Defesa Prévia</span>
+
+                            break;
+
+                        case "AIJP":
+                            <span>AIJ</span>
+
+                            break;
+
+                        case "SENT":
+                            <span>Sentença</span>
+
+                            break;
+                    }
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Defendant)
@@ -121,9 +288,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.IdStatus)
             </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.TxStatus)
-            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ProcessID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a> |

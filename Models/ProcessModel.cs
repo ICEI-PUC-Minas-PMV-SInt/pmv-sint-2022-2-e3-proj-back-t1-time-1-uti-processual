@@ -40,5 +40,9 @@ namespace utip_backend.Models
         public int? IdStatus { get; set; }
         [Column(TypeName = "nvarchar(4)")]
         public string? TxStatus { get; set; }
+        [Column(TypeName = "datetime()")]
+        public DateTime? CreatedDate { get; set; }
+        [Column(TypeName = "int")]
+        public int? days { get; set; }
     }
 }

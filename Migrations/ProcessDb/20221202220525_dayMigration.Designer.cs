@@ -9,11 +9,11 @@ using utip_backend.Data;
 
 #nullable disable
 
-namespace utip_backend.Migrations
+namespace utip_backend.Migrations.ProcessDb
 {
     [DbContext(typeof(ProcessDbContext))]
-    [Migration("20221117015441_InitialCreateProcess")]
-    partial class InitialCreateProcess
+    [Migration("20221202220525_dayMigration")]
+    partial class dayMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,9 @@ namespace utip_backend.Migrations
 
                     b.Property<string>("Attorney")
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime()");
 
                     b.Property<DateTime?>("DataDoCrime")
                         .HasColumnType("datetime()");
@@ -79,6 +82,9 @@ namespace utip_backend.Migrations
 
                     b.Property<string>("TxStatus")
                         .HasColumnType("nvarchar(4)");
+
+                    b.Property<int?>("days")
+                        .HasColumnType("int");
 
                     b.HasKey("ProcessID");
 

@@ -95,6 +95,11 @@
                 <span asp-validation-for="TxStatus" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="days" class="control-label"></label>
+                <input asp-for="days" class="form-control" />
+                <span asp-validation-for="days" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

@@ -54,7 +54,7 @@ namespace utip_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus")] ProcessModel processModel)
+        public async Task<IActionResult> Create([Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus,days")] ProcessModel processModel)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace utip_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus")] ProcessModel processModel)
+        public async Task<IActionResult> Edit(int id, [Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus,days")] ProcessModel processModel)
         {
             if (id != processModel.ProcessID)
             {
