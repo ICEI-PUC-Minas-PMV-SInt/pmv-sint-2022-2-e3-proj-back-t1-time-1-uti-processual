@@ -12,14 +12,14 @@ using utip_backend.Areas.Identity.Data;
 namespace utip_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221112165946_InitMigration")]
-    partial class InitMigration
+    [Migration("20221207001533_initialMigration")]
+    partial class initialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.10")
+                .HasAnnotation("ProductVersion", "6.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);

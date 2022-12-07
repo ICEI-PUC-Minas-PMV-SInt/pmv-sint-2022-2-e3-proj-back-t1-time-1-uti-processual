@@ -33,7 +33,7 @@ namespace utip_backend.Migrations.ProcessDb
                     b.Property<string>("Attorney")
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime()");
 
                     b.Property<DateTime?>("DataDoCrime")
@@ -72,6 +72,9 @@ namespace utip_backend.Migrations.ProcessDb
                     b.Property<string>("NumeroREDS")
                         .HasColumnType("nvarchar(11)");
 
+                    b.Property<int?>("ProcessTimeCounter")
+                        .HasColumnType("int");
+
                     b.Property<string>("TelefoneReu")
                         .HasColumnType("nvarchar(11)");
 
@@ -80,9 +83,6 @@ namespace utip_backend.Migrations.ProcessDb
 
                     b.Property<string>("TxStatus")
                         .HasColumnType("nvarchar(4)");
-
-                    b.Property<int?>("days")
-                        .HasColumnType("int");
 
                     b.HasKey("ProcessID");
 

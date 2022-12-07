@@ -41,8 +41,8 @@ namespace utip_backend.Models
         [Column(TypeName = "nvarchar(4)")]
         public string? TxStatus { get; set; }
         [Column(TypeName = "datetime()")]
-        public DateTime? CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         [Column(TypeName = "int")]
-        public int? days { get; set; }
+        public int? ProcessTimeCounter { get; set; }
     }
 }
