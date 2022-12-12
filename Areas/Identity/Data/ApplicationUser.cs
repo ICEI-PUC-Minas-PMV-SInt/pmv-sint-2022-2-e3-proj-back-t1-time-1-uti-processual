@@ -11,5 +11,6 @@ public class ApplicationUser : IdentityUser
 {
     public string TxFirstName { get; set; }
     public string TxLastName { get; set; }
+    public int? Admin { get; set; }
 }
 

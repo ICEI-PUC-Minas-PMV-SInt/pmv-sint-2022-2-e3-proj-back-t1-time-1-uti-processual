@@ -12,8 +12,8 @@ using utip_backend.Areas.Identity.Data;
 namespace utip_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221207001533_initialMigration")]
-    partial class initialMigration
+    [Migration("20221212023234_init ")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -167,6 +167,9 @@ namespace utip_backend.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Admin")
                         .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")

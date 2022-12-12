@@ -10,7 +10,14 @@
                 Lei de Tóxicos 11.343/06 
             </span>
             <span >
-                <a type="button" asp-area="" asp-controller="Processes" asp-action="Index" class="btn btn-secondary btn-md">Ver Processos</a>
+                @if(User.Identity.IsAuthenticated)
+                {
+                    <a type="button" asp-area="" asp-controller="Processes" asp-action="Index" class="btn btn-secondary btn-md">Ver Processos</a>
+
+                } 
+                else {
+                    <a type="button" asp-area="" asp-controller="Processes" asp-action="CommonIndex" class="btn btn-secondary btn-md">Ver Processos</a>
+                }
             </span>
         </div>
     </div>

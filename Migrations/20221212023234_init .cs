@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace utip_backend.Migrations
 {
-    public partial class initialMigration : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,6 +30,7 @@ namespace utip_backend.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     TxFirstName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     TxLastName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Admin = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),

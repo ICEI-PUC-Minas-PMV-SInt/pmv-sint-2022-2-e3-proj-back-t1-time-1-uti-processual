@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using utip_backend.Data;
 using utip_backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace utip_backend.Controllers
 {
@@ -19,10 +21,16 @@ namespace utip_backend.Controllers
             _context = context;
         }
 
-        // GET: Processes
+        // GET: Processes for Adm
         public async Task<IActionResult> Index()
         {
               return View(await _context.Processo.ToListAsync());
+        }
+
+        // GET: Processes
+        public async Task<IActionResult> CommonIndex()
+        {
+            return View(await _context.Processo.ToListAsync());
         }
 
         // GET: Processes/Details/5
@@ -44,6 +52,7 @@ namespace utip_backend.Controllers
         }
 
         // GET: Processes/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -53,6 +62,7 @@ namespace utip_backend.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus,ProcessTimeCounter")] ProcessModel processModel)
         {
@@ -85,6 +95,7 @@ namespace utip_backend.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProcessID,NumLegalProcess,Defendant,NaturalidadeReu,FiliacaoReu,DataNascReu,TelefoneReu,DefensoriaPublica,Attorney,TipoPenal,DefAddress,NumeroREDS,DataDoCrime,LocalDoCrime,NumInqueritoPolicial,IdStatus,TxStatus,ProcessTimeCounter")] ProcessModel processModel)
         {
@@ -118,6 +129,7 @@ namespace utip_backend.Controllers
         }
 
         // GET: Processes/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Processo == null)
@@ -136,6 +148,7 @@ namespace utip_backend.Controllers
         }
 
         // POST: Processes/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

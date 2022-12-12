@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<utip_backend.Models.ProcessModel>
 
-
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,7 +8,7 @@
 <h1>Lei 11.343/06</h1>
 
 <p>
-    <a target="_blank" asp-action="Create">Create New</a>
+    
 </p>
 <table class="table table-hover">
     <thead>
@@ -66,7 +65,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.IdStatus)
             </th>*@
-            <th>Ações</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -291,12 +290,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.IdStatus)
             </td>*@
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProcessID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProcessID">Delete</a>
-            </td>
+                <td><a asp-action="Details" asp-route-id="@item.ProcessID">Details</a></td>
         </tr>
-}
+}       
     </tbody>
 </table>
