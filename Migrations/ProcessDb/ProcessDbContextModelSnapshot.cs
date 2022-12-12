@@ -60,6 +60,9 @@ namespace utip_backend.Migrations.ProcessDb
                     b.Property<string>("LocalDoCrime")
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime()");
+
                     b.Property<string>("NaturalidadeReu")
                         .HasColumnType("nvarchar(30)");
 

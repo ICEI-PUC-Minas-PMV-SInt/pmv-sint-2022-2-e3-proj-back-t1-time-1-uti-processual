@@ -44,5 +44,7 @@ namespace utip_backend.Models
         public DateTime CreatedDate { get; set; }
         [Column(TypeName = "int")]
         public int? ProcessTimeCounter { get; set; }
+        [Column(TypeName = "datetime()")]
+        public DateTime? ModifiedDate { get; set; }
     }
 }

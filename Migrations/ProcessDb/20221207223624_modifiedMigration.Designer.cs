@@ -12,8 +12,8 @@ using utip_backend.Data;
 namespace utip_backend.Migrations.ProcessDb
 {
     [DbContext(typeof(ProcessDbContext))]
-    [Migration("20221207002739_daysMigration")]
-    partial class daysMigration
+    [Migration("20221207223624_modifiedMigration")]
+    partial class modifiedMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,6 +61,9 @@ namespace utip_backend.Migrations.ProcessDb
 
                     b.Property<string>("LocalDoCrime")
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime()");
 
                     b.Property<string>("NaturalidadeReu")
                         .HasColumnType("nvarchar(30)");

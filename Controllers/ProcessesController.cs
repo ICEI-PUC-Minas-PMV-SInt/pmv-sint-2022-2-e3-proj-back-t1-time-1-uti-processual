@@ -98,6 +98,7 @@ namespace utip_backend.Controllers
                 try
                 {
                     _context.Update(processModel);
+                    _context.Entry(processModel).Property(x => x.CreatedDate).IsModified = false;
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

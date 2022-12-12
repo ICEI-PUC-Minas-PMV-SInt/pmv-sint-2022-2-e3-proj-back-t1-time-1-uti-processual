@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace utip_backend.Migrations.ProcessDb
 {
-    public partial class daysMigration : Migration
+    public partial class modifiedMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,7 +32,8 @@ namespace utip_backend.Migrations.ProcessDb
                     IdStatus = table.Column<int>(type: "int", nullable: true),
                     TxStatus = table.Column<string>(type: "nvarchar(4)", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: false),
-                    ProcessTimeCounter = table.Column<int>(type: "int", nullable: true)
+                    ProcessTimeCounter = table.Column<int>(type: "int", nullable: true),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {
