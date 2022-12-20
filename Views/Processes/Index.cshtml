@@ -8,9 +8,12 @@
 
 <h1>Lei 11.343/06</h1>
 
+@if (User.Identity.IsAuthenticated)
+{
 <p>
     <a target="_blank" asp-action="Create">Create New</a>
-</p>
+</p>    
+}
 <table class="table table-hover">
     <thead>
         <tr>
@@ -292,9 +295,19 @@
                 @Html.DisplayFor(modelItem => item.IdStatus)
             </td>*@
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProcessID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProcessID">Delete</a>
+                    @{
+                        if (!User.Identity.IsAuthenticated)
+                        {
+                            <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a>
+                        } else
+                        {
+                            <div>
+                                <a asp-action="Edit" asp-route-id="@item.ProcessID">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.ProcessID">Details</a> |              
+                                <a asp-action="Delete" asp-route-id="@item.ProcessID">Delete</a>
+                            </div>
+                        }
+                    }
             </td>
         </tr>
 }
